@@ -1,6 +1,8 @@
+/* --Fonts import-- */
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&family=Spartan:wght@700&display=swap');
 
+/* --General settings-- */
 * {
   margin: 0;
   padding: 0;
@@ -18,26 +20,7 @@ body {
   text-align: center;
 }
 
-#tapa1 {
-  width: 300px;
-  height: 500px;
-  background-color: #fff;
-  z-index: 1000;
-  position: absolute;
-  right: 340px;
-  top: -50px;
-}
-
-#tapa2 {
-  width: 300px;
-  height: 500px;
-  background-color: #fff;
-  z-index: 1000;
-  position: absolute;
-  left: 340px;
-  top: -50px;
-}
-
+/* --Header settings-- */
 h1 {
   position: relative;
   color: black;
@@ -47,7 +30,6 @@ h1 {
   margin-top: 2%;
   font-family: 'Quicksand', sans-serif;
 }
-
 p {
   position: relative;
   font-size: 20px;
@@ -57,6 +39,7 @@ p {
   margin-right: 20%;
 }
 
+/* --Article settings-- */
 #extra {
   background-color: white;
   width: 20%;
@@ -65,6 +48,65 @@ p {
   height: auto;
 }
 
+/* --Footer settings-- */
+body > footer {
+  position: relative;
+  top: 150px;
+  margin-bottom: 2%;
+}
+
+body > footer button.material-icons {
+  font-size: 50px;
+}
+/* ---------Tablet landscape------------ */
+@media screen and (max-width: 1080px) {
+  /* --Header settings-- */
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 4%;
+    margin-top: 20%;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 15%;
+  }
+}
+
+/* ---------Tablet------------ */
+@media screen and (max-width: 817px) {
+  /* --Header settings-- */
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0%;
+    margin-top: 10%;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 5%;
+    position: relative;
+    bottom: -100px;
+  }
+   body > footer {
+    top: 350px;
+  }
+}
+/* ---------Mobile phone------------ */
+@media screen and (max-width: 617px) {
+  /* --Header settings-- */
+  h1 {
+    font-size: 3rem;
+    margin-left: 22%;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 10%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+/* --Developing carousel-- */
+/* 
 #camara {
   position: absolute;
   width: 250px;
@@ -150,33 +192,7 @@ p {
 #cara8 {
   background-image: url('images/instalaciones/galeria8.jpg');
   transform: rotateY(315deg) translateZ(302px);
-}
-
-body > footer {
-  position: relative;
-  top: 150px;
-  margin-bottom: 2%;
-}
-
-body > footer button.material-icons {
-  font-size: 50px;
-}
-
-@media screen and (max-width: 1080px) {
-  body > footer {
-    top: 160px;
-  }
-  h1 {
-    font-size: 5rem;
-    margin-bottom: 4%;
-    margin-top: 20%;
-  }
-  p {
-    font-size: 18px;
-    margin-bottom: 15%;
-  }
-}
-
+} 
 @media screen and (max-width: 817px) {
   body > footer {
     top: 160px;
@@ -220,4 +236,4 @@ body > footer button.material-icons {
     margin-left: 20%;
     margin-right: 20%;
   }
-}
+}*/

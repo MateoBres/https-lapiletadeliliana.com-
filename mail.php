@@ -1,3 +1,4 @@
+<!-- Send email with client's data -->
 <?php
 if (isset($_POST['enviar'])) {
     if(!empty($_POST['nombre']) && !empty($_POST['phone'])){
@@ -13,19 +14,15 @@ if (isset($_POST['enviar'])) {
         $comentario=$_POST['comentario'];
         $ano = 2020;
         $edad = $ano - $nacimientoAno;
-
         $clases_bebes=$_POST['clases_bebes'];
         $clases_escuelita=$_POST['clases_escuelita'];
         $clases_aquagim=$_POST['clases_aquagim'];
         $clases_aquaFitness=$_POST['clases_aquaFitness'];
-
         $veces=$_POST['veces'];
-
         $lunes=$_POST['lunes'];
         $martes=$_POST['martes'];
         $miercoles=$_POST['miercoles'];
         $jueves=$_POST['jueves'];
-
         $h8=$_POST['h8'];
         $h9=$_POST['h9'];
         $h10=$_POST['h10'];
@@ -37,14 +34,13 @@ if (isset($_POST['enviar'])) {
         $h18=$_POST['h18'];
         $h19=$_POST['h19'];
         $h20=$_POST['h20'];
-
+        // Email header
         $to = 'magaricaldoni@gmail.com';
         $headers = "From: magaricaldoni@gmail.com" . "\r\n";
         $headers = "CC:  magaricaldoni@gmail.com";
         $subject = $_POST['nombreAlumno'];
         $headers = "X-Mailer: PHP/". phpversion();
         $headers = "Content-type:text/html;charset=UTF-8" . "\r\n";
-
         $message = "
         <html>
             <head>
@@ -82,6 +78,7 @@ if (isset($_POST['enviar'])) {
                 <strong>horario:</strong> $h20 <br/><br/>
             </body>
         </html>";	
+        // Redirect to homepage
         echo "<script>alert('Tus datos han sido enviados, en breve nos pondremos en contacto, gracias!');window.location.href='https://lapiletadeliliana.com/index.html';</script>";
         mail($to, $subject, $message, $headers);
     }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&family=Spartan:wght@700&display=swap');
 
+/* --General settings-- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,16 +18,12 @@ body {
 a {
   text-decoration: none;
 }
-#texto {
-  padding: 3%;
-  background-color: rgba(251, 253, 255, 0.4);
-  font-size: x-large;
-  line-height: 28px;
-}
 #principal {
   display: flex;
   flex-direction: column;
 }
+
+/* --Header settings-- */
 header {
   width: 100%;
   height: 100px;
@@ -82,6 +79,8 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* --Main settings-- */
 main {
   margin-top: 100px;
   display: flex;
@@ -99,17 +98,10 @@ main {
   font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
 }
-
 h1 {
   font-size: 80px;
   color: white;
   font-family: 'Spartan', sans-serif;
-}
-#extra {
-  width: 20%;
-  position: relative;
-  width: 100%;
-  height: auto;
 }
 #botones button {
   width: 100%;
@@ -134,22 +126,38 @@ h1 {
   justify-content: center;
   margin-top: 15%;
 }
-footer {
+
+/* --Article settings-- */
+#texto {
+  padding: 3%;
+  background-color: rgba(251, 253, 255, 0.4);
+  font-size: x-large;
+  line-height: 28px;
+}
+#extra {
+  width: 20%;
+  position: relative;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg, #cbebf8, #6fccf1);
-  display: flex;
-  justify-content: space-around;
 }
-#footer-btn button {
+#article-btn button {
   width: 100%;
   height: 2%;
   background: #00334e;
   color: #fff;
   font-size: 20px;
 }
-#footer-btn {
+#article-btn {
   text-decoration: none;
+}
+
+/* --Footer settings-- */
+footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, #cbebf8, #6fccf1);
+  display: flex;
+  justify-content: space-around;
 }
 footer h2,
 footer div,
@@ -177,9 +185,10 @@ iframe {
   height: 400px;
 }
 
-/*     Tablet landscape      */
+/* ---------Tablet landscape------------- */
 
 @media screen and (max-width: 1080px) {
+  /* --Header settings-- */
   header button {
     display: block;
     background: transparent;
@@ -209,6 +218,7 @@ iframe {
     box-shadow: 2px 0 10px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
   }
+  /* --Main settings-- */
   #titulo {
     position: relative;
     top: 50px;
@@ -217,21 +227,24 @@ iframe {
     font-size: 80px;
     color: white;
   }
+  /* --Article settings-- */
+  #article-btn button {
+    height: 2%;
+  }
+  /* --Footer settings-- */
   #footer1,
   #direccion {
     margin-top: 3%;
-  }
-  #footer-btn button {
-    height: 2%;
   }
   #contacto {
     display: none;
   }
 }
 
-/*    Tablet    */
+/* ----------Tablet---------------  */
 
 @media screen and (max-width: 817px) {
+  /* --Header settings-- */
   h1 {
     font-size: 50px;
   }
@@ -241,22 +254,21 @@ iframe {
   #botones a {
     width: 24rem;
   }
-  footer img {
-    width: 6rem;
-    height: 6rem;
+  header button {
+    width: 40%;
   }
-  footer {
-    flex-direction: column;
-  }
+  /* --Main settings-- */
   #titulo {
     top: -40px;
   }
   #titulo p {
     font-size: 1.5rem;
   }
-  header button {
-    width: 40%;
+  /* --Article settings-- */
+  #article-btn button {
+    height: 2%;
   }
+  /* --Footer settings-- */
   footer {
     width: 100%;
     height: auto;
@@ -264,6 +276,13 @@ iframe {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+  }
+  footer img {
+    width: 6rem;
+    height: 6rem;
+  }
+  footer {
     flex-direction: column;
   }
   footer h2,
@@ -303,14 +322,12 @@ iframe {
     margin-left: 8rem;
     margin-top: 3%;
   }
-  #footer-btn button {
-    height: 2%;
-  }
 }
 
-/*   Mobile phone    */
+/*  -----------Mobile phone------------- */
 
 @media screen and (max-width: 500px) {
+  /* --Header settings-- */
   header img {
     width: 70%;
     margin: 17px 0px 10px 17px;
@@ -327,6 +344,10 @@ iframe {
   header button {
     margin-left: 5%;
   }
+  #inicio {
+    margin-left: 3.3rem;
+  }
+  /* --Main settings-- */
   #titulo {
     top: -40px;
   }
@@ -343,14 +364,18 @@ iframe {
   #titulo p {
     font-size: 1.2em;
   }
-  #inicio {
-    margin-left: 3.3rem;
+  /* --Article settings-- */
+  #article-btn button {
+    width: 100%;
+    display: block;
+    height: 100%;
+    background: #00334e;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 0;
   }
-  iframe {
-    width: 330px;
-    height: 300px;
-    margin-left: 1rem;
-  }
+  /* --Footer settings-- */
   footer h2,
   footer div,
   footer h4 {
@@ -367,14 +392,9 @@ iframe {
   #direccion {
     margin-left: 15px;
   }
-  #footer-btn button {
-    width: 100%;
-    display: block;
-    height: 100%;
-    background: #00334e;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    margin-bottom: 0;
+  iframe {
+    width: 330px;
+    height: 300px;
+    margin-left: 1rem;
   }
 }

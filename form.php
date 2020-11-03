@@ -9,6 +9,7 @@
 
   <title>Reservá</title>
   <style>
+    /* Special style for the page */
     body {
       font-size: x-large;
       background-image: url('static/images/fondo-form.jpeg');
@@ -35,6 +36,7 @@
   </div>
   <form method="POST" id='formulario'>
     <br>
+    <!-- Personal information -->
     <label for="nombreAlumno"><b>Nombre y apellido del alumno/a:</b></label>
     <br>
     <input type="text" id='nombreAlumno' name="nombreAlumno" placeholder='para quien es la clase' required min=2>
@@ -63,6 +65,7 @@
     <br>
     <br>
     <br>
+    <!-- Family discount -->
     <label><b>Hacemos descuentos si viene más de un miembro de la familia!</b>
       <br>
       ¿Para cuántos miembros de tu flia reservás?
@@ -76,6 +79,7 @@
     </select>
     <br>
     <br>
+    <!-- Client disabilty -->
     <label><b>¿Tiene alguna discapacidad?</b></label>
     <br>
     <input type="radio" id="no" name="discapacidad" value="No" checked>
@@ -92,6 +96,7 @@
     <br>
     <br>
     <br>
+    <!-- Courses interest -->
     <label id='seccion'><b>Selecciona las clases que reservan o consultan:</b></label><br><br>
     <input type="checkbox" name='clases_bebes' id="bebe" value='clases_bebes'>
     <label for="bebe">Bebés (4 meses a 3 años)</label><br>
@@ -103,6 +108,7 @@
     <label for="aquaFit">AquaFitness</label><br>
     <br>
     <br>
+    <!-- Client avaibility -->
     <label name='veces'><b>Cuantas veces por semana querés venir?</b><br>
       Se abona mensualmente<br></label><br>
     <select id="veces" name='veces'>
