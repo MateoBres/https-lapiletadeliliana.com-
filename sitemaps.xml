@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>http://www.lapiletadeliliana.com/index.html</loc>
+      <image:image>
+      <image:title>AquaGym</image:title>
+        <image:loc>http://lapiletadeliliana.com/static/images/index2.jpeg</image:loc>
+      </image:image>
+    <lastmod>2020-10-07</lastmod>
+  </url>
+  <url>
+    <loc>http://www.lapiletadeliliana.com/Form.html</loc>
+    <lastmod>2020-10-07</lastmod>
+  </url>
+</urlset>
