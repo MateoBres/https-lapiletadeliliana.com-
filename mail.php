@@ -86,4 +86,3 @@ if (isset($_POST['enviar'])) {
         mail($to, $subject, $message, $headers);
     }
 }
-?>

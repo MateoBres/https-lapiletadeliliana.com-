@@ -1,5 +1,5 @@
 
-//ANIMACION DEL BOTON/MENU
+//Menu button responsive animation
 
 let menu = document.querySelector(".material-icons")
 let drawer = document.querySelector("#drawer")
