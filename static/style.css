@@ -140,14 +140,14 @@ h1 {
   width: 100%;
   height: auto;
 }
-#article-btn button {
+.article-btn {
   width: 100%;
   height: 2%;
   background: #00334e;
   color: #fff;
   font-size: 20px;
 }
-#article-btn {
+.article-btn {
   text-decoration: none;
 }
 
