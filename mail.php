@@ -79,7 +79,7 @@ if (isset($_POST['enviar'])) {
             </body>
         </html>";	
         // Redirect to homepage
-        echo "<script>alert('Tus datos han sido enviados, en breve nos pondremos en contacto, gracias!');window.location.href='https://lapiletadeliliana.com/index.html';</script>";
+        echo "<script>alert('Tus datos han sido enviados, en breve nos pondremos en contacto, gracias!');window.location.href='https://lapiletadeliliana.com/index.php';</script>";
         mail($to, $subject, $message, $headers);
     }
 }
